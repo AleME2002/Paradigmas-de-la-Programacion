@@ -1,6 +1,4 @@
 import Prelude hiding (Maybe(..), Either(..))
-import System.Win32 (xBUTTON1)
-import Distribution.Simple.Utils (findFileCwdWithExtension)
 
 --------------------Ejercicio 2--------------------
 --a
