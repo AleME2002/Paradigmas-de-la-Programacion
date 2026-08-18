@@ -44,10 +44,14 @@ if esMultiploDe10 29 then [] else 29 : takeHastaMultiploDe10 (listaDesde (29 + 1
 [29]
 -}
 
-
+--Generacion Infinita--
 --------------------Ejercicio 4--------------------
 
+paresDeNat :: [(Int, Int)]
+paresDeNat = [(x,s-x) | s <- [0..] , x <- [0..s]]
 
+
+--------------------Ejercicio 5--------------------
 
 
 
