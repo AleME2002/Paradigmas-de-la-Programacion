@@ -53,5 +53,15 @@ paresDeNat = [(x,s-x) | s <- [0..] , x <- [0..s]]
 
 --------------------Ejercicio 5--------------------
 
+pitagoricas :: [(Integer, Integer, Integer)]
+pitagoricas = [(a, b, c) | a <- [1..], b <-[1..], c <- [1..], a^2 + b^2 == c^2]
+
+-- No es util ya que lo que haria primero es intentar llenar c pero irira hasta infinito sin llenar el resto
+
+pitagoricas' :: [(Integer, Integer, Integer)]
+pitagoricas' = [(a, b, c) | c <- [1..], b <- [1..c], a <- [1..c], a^2 + b^2 == c^2]
+
+
+--------------------Ejercicio 6--------------------
 
 
