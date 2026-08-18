@@ -71,6 +71,7 @@ listasQueSuman n = [a : b | a <- [1..n], b <- listasQueSuman (n-a)]
 
 --------------------Ejercicio 7--------------------
 
-
+listaDeListasFinitas :: [[Int]]
+listaDeListasFinitas = [xs | n <- [0..], xs <- listasQueSuman n]
 
 
