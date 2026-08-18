@@ -64,4 +64,13 @@ pitagoricas' = [(a, b, c) | c <- [1..], b <- [1..c], a <- [1..c], a^2 + b^2 == c
 
 --------------------Ejercicio 6--------------------
 
+listasQueSuman :: Int -> [[Int]]
+listasQueSuman 0 = [[]]
+listasQueSuman n = [a : b | a <- [1..n], b <- listasQueSuman (n-a)]
+
+
+--------------------Ejercicio 7--------------------
+
+
+
 
