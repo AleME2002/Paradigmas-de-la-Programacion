@@ -75,3 +75,18 @@ listaDeListasFinitas :: [[Int]]
 listaDeListasFinitas = [xs | n <- [0..], xs <- listasQueSuman n]
 
 
+--------------------Ejercicio 8--------------------
+
+menosDeN :: Int -> [[a]] -> [[a]]
+menosDeN n = filter (\l -> length l == n)
+
+aprobados :: [Int] -> [Bool]
+aprobados = map(> 6)
+--aprobados = map(\n -> n > 6)
+
+paresCuadrados :: [Int] -> [Int]
+paresCuadrados l = map (^2) (filter even l)
+--paresCuadrados l = map (^2) (filter (\n -> even n) l)
+
+
+
